@@ -1,0 +1,65 @@
+</DOCTYPE html>
+<html>
+<head>
+<title>CRUDS</title>
+<meta charset="utf-9/">
+<link rel="stylesheet" href="CrudsCss.css">
+</head>
+
+<body>
+    <div class="crud">
+        <div class="head">
+            <h1>CRUDS</h1>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="updateTotal()" type="number" id="price" placeholder="Price">
+                <input onkeyup="updateTotal()" type="number" id="taxes" placeholder="Taxes">
+                <input onkeyup="updateTotal()" type="number" id="ads" placeholder="Ads">
+                <div class="pp">
+                    <input onkeyup="updateTotal()" type="number" id="discount" placeholder="Discount">
+                    <small id="total"></small>
+                </div>
+
+            </div>
+            <input type="number" id="count" placeholder="Count">
+            <input type="text" id="category" placeholder="Category">
+            <button id="create">Create</button>
+        </div>
+        <div class="outputs">
+        <div class="searchBlock">
+                <input type="text" id="search" placeholder="Search">
+                <div class="btnsearh">
+                    <button id="searchtitle">Search By Title</button>
+                    <button id="searchcategory">Search By Category</button>
+                </div>
+            </div>
+            <div id="deleteall">
+                
+            </div>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Taxes</th>
+                    <th>Ads</th>
+                    <th>Discount</th>
+                    <th >Total</th>
+                    <th class="qq">Category</th>
+                    <th class="o">Update</th>
+                    <th class="o">Delete</th>
+                </tr>
+                <tbody id="tbody"> </tbody>
+            </table>
+        </div>
+
+    </div>
+
+<button id="btn">▲</button>
+<div class="stars"></div>
+<script src="Crudsjs.js"></script>
+</body>
+</html>
